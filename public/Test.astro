@@ -1,0 +1,8 @@
+---
+// @ts-check
+
+export interface Props {
+	color: "red" | "blue" | "green"
+}
+---
+<div color={Astro.props.color}><slot /><div>

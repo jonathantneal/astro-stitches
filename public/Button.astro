@@ -1,0 +1,22 @@
+---
+import { styled, ComponentProps } from '../stitches.config'
+
+const button = styled({
+	backgroundColor: 'gainsboro',
+	borderRadius: '9999px',
+	fontSize: '13px',
+	padding: '10px 15px',
+	'&:hover': {
+		backgroundColor: 'lightgray',
+	},
+})
+
+const render = () => {
+	const { props } = button(Astro.props)
+	props.class = props.className
+	delete props.className
+	return props
+}
+
+---
+<button {...render()}><slot /></button>

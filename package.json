@@ -1,0 +1,17 @@
+{
+  "name": "astro",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "astro dev",
+    "build": "astro build"
+  },
+  "devDependencies": {
+    "astro": "0.20.4",
+    "@stitches/astro": "https://pkg.csb.dev/modulz/stitches/commit/86f7072f/@stitches/astro"
+  },
+  "type": "module",
+  "dependencies": {
+    "@stitches/core": "^1.0.0"
+  }
+}
